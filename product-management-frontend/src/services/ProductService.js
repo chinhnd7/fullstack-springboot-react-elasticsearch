@@ -28,3 +28,21 @@ export const viewProduct = async (id) => {
         console.error('Error view data', error);
     }
 }
+
+export const updateProduct = async (id, product) => {
+    try {
+        const response = await axios.put(BASE_URL + "/update/" + id, product);
+        return response.data;
+    } catch (error) {
+        console.error('Error update data', error);
+    }
+}
+
+export const deleteProduct = async (id) => {
+    try {
+        const response = await axios.delete(BASE_URL + "/delete/" + id);
+        return response.data;
+    } catch (error) {
+        console.error('Error delete data', error);
+    }
+}

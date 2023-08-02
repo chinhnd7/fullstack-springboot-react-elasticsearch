@@ -9,4 +9,8 @@ public interface ProductService {
     Product insertProductIntoDatabase(Product product);
 
     Product getProductById(int id);
+
+    Product updateProduct(int id, Product product);
+
+    Product deleteProductById(int id);
 }

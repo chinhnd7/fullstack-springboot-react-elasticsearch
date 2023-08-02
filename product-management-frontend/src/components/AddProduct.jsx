@@ -61,11 +61,11 @@ const AddProduct = () => {
                 </div>
 
                 <Link to="/listproducts">
-                  <button className="btn btn-success" style={{ margin: '10px 5px 0 0' }} onClick={handleAddProduct}>save</button>
+                  <button className="btn btn-success" style={{ margin: '10px 5px 0 0' }} onClick={handleAddProduct}>Save</button>
                 </Link>
 
                 <Link to="/listproducts">
-                  <button className="btn btn-danger" style={{ margin: '10px 0 0 5px' }}>cancel</button>
+                  <button className="btn btn-danger" style={{ margin: '10px 0 0 5px' }}>Cancel</button>
                 </Link>
               </div>
 

@@ -11,7 +11,13 @@ const Product = ({ product }) => {
             <td>{product.quantity}</td>
             <td>
             <Link to={`/viewproduct/${product.id}`}>
-                <button className="btn btn-info">View</button>
+                <button className="btn btn-outline-info">View</button>
+            </Link>
+            <Link to={`/updateproduct/${product.id}`}>
+                <button className="btn btn-outline-info" style={{marginLeft: '10px'}}>Update</button>
+            </Link>
+            <Link to={`/deleteproduct/${product.id}`}>
+                <button className="btn btn-outline-danger" style={{marginLeft: '10px'}}>Delete</button>
             </Link>
             </td>
         </>

@@ -25,11 +25,11 @@ const ListProducts = () => {
 
     return (
         <div>
-            <h1 className="text-center">List Of Products Page</h1>
+            <h1 className="text-center" style={{alignItems: 'center', textAlign: 'center', fontSize: '30px', fontStyle: 'italic'}}>List Of Products Page</h1>
             <Link to="/addproduct">
-                <div class="btn btn-lg btn-secondary fw-bold border-yellow bg-gray">Add Product</div>
+                <div className="btn btn-lg btn-secondary fw-bold border-yellow bg-gray">Add Product</div>
             </Link>
-            <table className="table table-dark">
+            <table className="table table-responsive">
                 <thead>
                     <tr>
                         <th scope='col'>Product Id</th>
